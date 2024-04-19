@@ -1,0 +1,90 @@
+<?php 
+include("include/template/_header.php");
+?>
+    
+    <!-- Sidebar wrapper start -->
+    <?php  include("include/template/_sidebar.php"); ?>
+
+    <!-- Sidebar wrapper end -->
+
+    <!-- Page content start  -->
+    <div class="page-content">
+
+        <!-- Header start -->
+        <?php 
+        include("include/template/_navbar.php");
+        ?>
+        <!-- Header end -->
+
+        <!-- Page header start -->
+        <div class="page-header">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">المحضرون</li>
+                <!-- <li class="breadcrumb-item active">Admin Dashboard</li> -->
+            </ol>
+
+            <ul class="app-actions">
+                <li>
+                    <a href="#" id="reportrange">
+                        <span class="range-text"></span>
+                        <i class="icon-chevron-down"></i>	
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Print">
+                        <i class="icon-print"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Download CSV">
+                        <i class="icon-cloud_download"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Page header end -->
+        
+        <div class="main-container">
+
+<!-- Row start -->
+<div class="row gutters">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="text-right mb-3">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addNewContact">اضافة</button>
+
+          
+        </div>
+    </div>
+</div>
+<!-- Row end -->
+
+<!-- Row start -->
+<div class="row gutters">
+   
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+        <figure class="user-card">
+            <figcaption>
+                <a href="#" class="edit-card" data-toggle="modal" data-target="#editContact">
+                    <i class="icon-mode_edit"></i>
+                </a>
+                <img src="img/user14.png" alt="Wafi Admin" class="profile">
+                <h5>Ali Sayed</h5>
+                <ul class="list-group">
+                    <li class="list-group-item">ali.sayed@wafi.com</li>
+                    <li class="list-group-item">+2 300-223-4567</li>
+                </ul>
+            </figcaption>
+        </figure>
+    </div>
+  
+</div>
+<!-- Row end -->
+
+</div>
+
+    </div>
+    <!-- Page content end -->
+    <?php 
+        include("include/template/_footer.php");
+        ?>
